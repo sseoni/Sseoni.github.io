@@ -3,68 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blog Main Page</title>
+    <link rel="stylesheet" href="mainstyle.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="menu-icon">&#9776;</div>
         </nav>
-        <h1>Hello World!</h1>
-        <h2>My name is <span class="highlight">Sseoni</span></h2>
+        <p class="helloworld">Hello World !<br> My name is <span class="highlight">Sseoni</span></p>
     </header>
 
     <main>
-        <section class="profile">
-            <img src="https://avatars.githubusercontent.com/u/82037889?v=4" alt="Profile Image">
-            <aside class="recent-posts">
-                <h3>Recent Posts</h3>
+        <div class="container">
+            <section class="profile">
+                <img src="https://avatars.githubusercontent.com/u/82037889?v=4" alt="Profile Image">
+                <div class="profile-info">
+                    <h2>Sseoni👩🏻‍💻🐶✨🥐</h2>
+                    <p>Korean girl who studies AI/ML in Seoul</p>
+                    <p>한국어 | English | Français | 汉语</p>
+                    <p>Python | SQL | C/C++ | Java<br>Machine Learning | AWS</p>
+                </div>
+            </section>
+        
+            <section class="recent-posts">
+                <h2>Recent Posts</h2>
                 <ul>
-                    <li><strong>third post</strong><p>script of first post</p></li>
-                    <li><strong>second post</strong><p>script of first post</p></li>
-                    <li><strong>first post</strong><p>script of first post</p></li>
+                    <li><a href="#"><div class="post"></div></a></li>
+                    <li><a href="#"><div class="post"></div></a></li>
+                    <li><a href="#"><div class="post"></div></a></li>
                 </ul>
-            </aside>
-        </section>
 
-        <section class="about-me">
-            <h3>About Me</h3>
-            <p><span class="highlight">Sseoni</span> 🧑🏻‍💻🐶✨🥐<br>Korean girl who studies AI/ML in Seoul</p>
-            <p>한국어 | English | Français | 汉语</p>
-            <p>Python | SQL | C/C++ | Java<br>Machine Learning | AWS</p>
-            <div class="social-links">
-                <a href="#">Github</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Skills</a>
-                <a href="#">Photos</a>
-            </div>
-        </section>
+                <div class="social-links">
+                    <a href="https://github.com/sseoni"><div class="circle"></div>Github</a>
+                    <a href="https://www.linkedin.com/in/seohyun-shin-4529b330b"><div class="circle"></div>LinkedIn</a>
+                    <a href="skills.html"><div class="circle"></div>Skills</a>
+                    <a href="photos.html"><div class="circle"></div>Photos</a>
+                </div>
+            </section>
+        </div>
 
         <section class="menu">
             <nav>
-                <a href="#">ML (37)</a>
-                <a href="#">Docker (8)</a>
-                <a href="#">Github (13)</a>
+                <a href="#">ML</a>
+                <a href="#">Docker</a>
+                <a href="#">Github</a>
+                <a href="adsp.html">ADsP</a>
+                <a href="#">SQLD</a>
             </nav>
         </section>
 
         <section class="all-posts">
-            <h3>All Posts</h3>
+            <h2>All Posts</h2>
             <article>
-                <h4>frist post</h4>
-                <p>script of first post</p>
+                <a href="#"><div class="post"></div></a>
+                <a href="#"><div class="post"></div></a>
             </article>
             <!-- Repeat for each post -->
         </section>
         
         <div class="pagination">
+            <button id="prev">Previous</button>
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
+            <button id="next">Next</button>
+            <script src="pagination.js"></script>
         </div>
     </main>
 </body>
 </html>
-
